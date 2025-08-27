@@ -1,5 +1,8 @@
-<div id="header" align="center">
-  <img src="https://i.imgur.com/uT05V2g.png" width="100%"/>
+<td width="35%" valign="top">
+  <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+     <img src="assets/video.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
+  </a>
+</td>
 
   <div id="title" style="margin-top: 20px;">
     <h1>Davi Anderson Batista Martins Da Silva</h1>
@@ -106,7 +109,7 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="https://i.imgur.com/g0M2Y0g.png" width="100%" alt="[COLE O LINK DA SUA IMAGEM/GIF AQUI]"/>
+         <img src="assets/sistemadevigilância.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
       </a>
     </td>
   </tr>
@@ -130,7 +133,7 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="https://i.imgur.com/g0M2Y0g.png" width="100%" alt="[COLE O LINK DA SUA IMAGEM/GIF AQUI]"/>
+         <img src="assets/reconhecimentofacial.gif" width="100%" alt="Demonstração do Projeto Sentinel"/>
       </a>
     </td>
   </tr>
@@ -138,7 +141,7 @@
 
 <table width="100%">
   <tr>
-    <td width="65%" valign="top">
+    <td width="100%" valign="top">
       <h3>FURIA - Know Your Fan</h3>
       <p align="justify">Site desenvolvido para a equipe de e-sports FURIA com formulários para coleta de dados de fãs, validação e armazenamento em banco de dados. Focado em aprender desenvolvimento web fullstack.</p>
       <br>
@@ -152,17 +155,12 @@
         <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank"><img src="https://img.shields.io/badge/Ver%20Demo-0077B5?style=for-the-badge&logo=react&logoColor=white" alt="Live Demo"/></a>
       </div>
     </td>
-    <td width="35%" valign="top">
-      <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="https://i.imgur.com/g0M2Y0g.png" width="100%" alt="[COLE O LINK DA SUA IMAGEM/GIF AQUI]"/>
-      </a>
-    </td>
   </tr>
 </table>
 
 <table width="100%">
   <tr>
-    <td width="65%" valign="top">
+    <td width="100%" valign="top">
       <h3>Chatbot FURIA</h3>
       <p align="justify">Página web interativa com perfis dos jogadores da FURIA e chatbot simples para cada jogador, usando JavaScript básico para praticar interatividade web.</p>
       <br>
@@ -175,11 +173,6 @@
         <a href="[LINK PARA O REPOSITÓRIO NO GITHUB]" target="_blank"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositório"/></a>
         <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank"><img src="https://img.shields.io/badge/Ver%20Demo-236ad3?style=for-the-badge&logo=javascript&logoColor=white" alt="Live Demo"/></a>
       </div>
-    </td>
-    <td width="35%" valign="top">
-      <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="https://i.imgur.com/g0M2Y0g.png" width="100%" alt="[COLE O LINK DA SUA IMAGEM/GIF AQUI]"/>
-      </a>
     </td>
   </tr>
 </table>
