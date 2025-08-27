@@ -109,7 +109,11 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+<<<<<<< HEAD
          <img src="assets/sistemadevigilância.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
+=======
+         <img src="assets/video.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
+>>>>>>> 78451411ef7d200efdc40155d48e7bdc89a03efb
       </a>
     </td>
   </tr>
@@ -133,7 +137,11 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+<<<<<<< HEAD
          <img src="assets/reconhecimentofacial.gif" width="100%" alt="Demonstração do Projeto Sentinel"/>
+=======
+         <img src="assets/video.gif" width="100%" alt="Demonstração do Projeto Sentinel"/>
+>>>>>>> 78451411ef7d200efdc40155d48e7bdc89a03efb
       </a>
     </td>
   </tr>
@@ -155,6 +163,14 @@
         <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank"><img src="https://img.shields.io/badge/Ver%20Demo-0077B5?style=for-the-badge&logo=react&logoColor=white" alt="Live Demo"/></a>
       </div>
     </td>
+<<<<<<< HEAD
+=======
+    <td width="35%" valign="top">
+      <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+         <img src="assets/video.gif" width="100%" alt="Demonstração do FURIA - Know Your Fan"/>
+      </a>
+    </td>
+>>>>>>> 78451411ef7d200efdc40155d48e7bdc89a03efb
   </tr>
 </table>
 
@@ -174,6 +190,14 @@
         <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank"><img src="https://img.shields.io/badge/Ver%20Demo-236ad3?style=for-the-badge&logo=javascript&logoColor=white" alt="Live Demo"/></a>
       </div>
     </td>
+<<<<<<< HEAD
+=======
+    <td width="35%" valign="top">
+      <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+         <img src="assets/video.gif" width="100%" alt="Demonstração do Chatbot FURIA"/>
+      </a>
+    </td>
+>>>>>>> 78451411ef7d200efdc40155d48e7bdc89a03efb
   </tr>
 </table>
 
