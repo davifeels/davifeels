@@ -1,5 +1,8 @@
-<div id="header" align="center">
-  <img src="https://i.imgur.com/uT05V2g.png" width="100%"/>
+<td width="35%" valign="top">
+  <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+     <img src="assets/video.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
+  </a>
+</td>
 
   <div id="title" style="margin-top: 20px;">
     <h1>Davi Anderson Batista Martins Da Silva</h1>
@@ -106,7 +109,7 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="assets/sistemadevigilância.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
+         <img src="assets/sistemadevigilancia.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
       </a>
     </td>
   </tr>
