@@ -3,7 +3,6 @@
      <img src="assets/video.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
   </a>
 </td>
-
   <div id="title" style="margin-top: 20px;">
     <h1>Davi Anderson Batista Martins Da Silva</h1>
     <h3>Desenvolvedor Full Stack | Analista de Sistemas | Segurança da Informação</h3>
