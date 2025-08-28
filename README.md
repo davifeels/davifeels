@@ -1,20 +1,22 @@
-<td width="35%" valign="top">
-  <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-     <img src="assets/video.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
-  </a>
-</td>
-  <div id="title" style="margin-top: 20px;">
+<div align="center" style="display: flex; flex-direction: column; align-items: center;">
+  <div style="margin-bottom: 25px;">
+    <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
+      <img src="assets/video.gif" width="600" alt="Demonstração do Sistema de Vigilância"/>
+    </a>
+  </div>
+  
+  <div style="margin-top: 25px;">
     <h1>Davi Anderson Batista Martins Da Silva</h1>
     <h3>Desenvolvedor Full Stack | Analista de Sistemas | Segurança da Informação</h3>
   </div>
 
-  <div id="contacts" style="margin-top: 15px;">
+  <div style="margin-top: 20px;">
     <img src="https://img.shields.io/badge/Local-Planaltina,%20DF-blue?style=for-the-badge" alt="Localização"/>
     <a href="mailto:davifeels333@gmail.com">
       <img src="https://img.shields.io/badge/Email-davifeels333@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
     </a>
     <a href="https://wa.me/5561994285138" target="_blank">
-        <img src="https://img.shields.io/badge/WhatsApp-(61)%2099428--5138-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
+      <img src="https://img.shields.io/badge/WhatsApp-(61)%2099428--5138-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
     </a>
   </div>
 </div>
@@ -27,7 +29,7 @@
   Desenvolvedor em formação com <strong>8 meses de experiência prática</strong> em desenvolvimento web e sistemas. Sou apaixonado por tecnologia e estou sempre em busca de evolução contínua, com foco em <strong>Python, JavaScript, Java e frameworks modernos</strong>. Tenho grande interesse em áreas como <strong>inteligência artificial, segurança da informação e reconhecimento facial</strong>, buscando sempre aplicar novos conhecimentos em projetos desafiadores.
 </p>
 
-<div align="center">
+<div align="center" style="margin-top: 15px;">
   <img src="https://img.shields.io/badge/Experi%C3%AAncia-8%2B%20Meses-55960c?style=for-the-badge" alt="Experiência"/>
   <img src="https://img.shields.io/badge/Tecnologias-15%2B-236ad3?style=for-the-badge" alt="Tecnologias"/>
   <img src="https://img.shields.io/badge/Projetos-6%2B-D14836?style=for-the-badge" alt="Projetos"/>
@@ -61,30 +63,38 @@
 
 ### 🛠️ Habilidades Técnicas
 
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <strong>Linguagens de Programação</strong>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java,javascript,python,html,css,mysql,sqlite" alt="Linguagens"/>
-      </p>
-      <strong>Frameworks & Tecnologias</strong>
-      <p>
-        <img src="https://skillicons.dev/icons?i=spring,nodejs,angular,react,flask,express" alt="Frameworks"/>
-      </p>
-    </td>
-    <td valign="top" width="50%">
-      <strong>Banco de Dados</strong>
-      <p>
-        <img src="https://skillicons.dev/icons?i=postgresql,mongodb,elasticsearch" alt="Banco de Dados"/>
-      </p>
-      <strong>Segurança & DevOps</strong>
-      <p>
-        <img src="https://skillicons.dev/icons?i=docker,kubernetes,gitlab,postman" alt="DevOps"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <table style="width:100%; text-align:center; border-collapse:collapse;">
+    <tr>
+      <td style="padding:10px;">
+        <strong>Linguagens de Programação</strong>
+        <p>
+          <img src="https://skillicons.dev/icons?i=java,javascript,python,html,css,mysql,sqlite" alt="Linguagens"/>
+        </p>
+      </td>
+      <td style="padding:10px;">
+        <strong>Frameworks & Tecnologias</strong>
+        <p>
+          <img src="https://skillicons.dev/icons?i=spring,nodejs,angular,react,flask,express" alt="Frameworks"/>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <strong>Banco de Dados</strong>
+        <p>
+          <img src="https://skillicons.dev/icons?i=postgresql,mongodb,elasticsearch" alt="Banco de Dados"/>
+        </p>
+      </td>
+      <td style="padding:10px;">
+        <strong>Segurança & DevOps</strong>
+        <p>
+          <img src="https://skillicons.dev/icons?i=docker,kubernetes,gitlab,postman" alt="DevOps"/>
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -108,7 +118,7 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="assets/sistemadevigilancia.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
+        <img src="assets/sistemadevigilancia.gif" width="100%" alt="Demonstração do Sistema de Vigilância"/>
       </a>
     </td>
   </tr>
@@ -132,7 +142,7 @@
     </td>
     <td width="35%" valign="top">
       <a href="[LINK PARA A DEMONSTRAÇÃO ONLINE]" target="_blank">
-         <img src="assets/reconhecimentofacial.gif" width="100%" alt="Demonstração do Projeto Sentinel"/>
+        <img src="assets/sistemadereconhecimentofacial.gif" width="100%" alt="Demonstração do Projeto Sentinel"/>
       </a>
     </td>
   </tr>
