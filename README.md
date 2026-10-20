@@ -349,26 +349,39 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
 
 ---
 
-## 📊 Estatísticas & Atividade no GitHub
+## 📊 Estatísticas & Atividade no GitHub (Telemetry Dashboard)
 
 <div align="center">
-  <table border="0">
+  <!-- Card 1: Full-width Monthly Commit Curve & Profile Timeline -->
+  <a href="https://github.com/davifeels" target="_blank">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=davifeels&theme=tokyonight" width="100%" alt="GitHub Profile Details & Commit Activity Curve" />
+  </a>
+
+  <br><br>
+
+  <!-- Row 2: 2 Side-by-side Analytical Cards -->
+  <table width="100%" border="0">
     <tr>
-      <td align="center">
-        <a href="https://github.com/davifeels">
-          <img height="185" src="https://github-readme-stats.vercel.app/api?username=davifeels&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br&count_private=true&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=10B981&text_color=94A3B8" alt="Estatísticas GitHub" />
+      <td width="50%" align="center" valign="middle">
+        <a href="https://github.com/davifeels" target="_blank">
+          <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=davifeels&theme=tokyonight" width="100%" alt="Top Languages by Commit (Java #1)" />
         </a>
       </td>
-      <td align="center">
-        <a href="https://github.com/davifeels">
-          <img height="185" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davifeels&layout=compact&langs_count=8&theme=tokyonight&locale=pt-br&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=94A3B8" alt="Linguagens mais usadas" />
+      <td width="50%" align="center" valign="middle">
+        <a href="https://github.com/davifeels" target="_blank">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=davifeels&layout=donut&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=70a5fd&text_color=94A3B8&hide=html,css" width="100%" alt="Top Languages Donut Breakdown" />
         </a>
       </td>
     </tr>
     <tr>
-      <td colspan="2" align="center">
-        <a href="https://github.com/davifeels">
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=davifeels&theme=tokyonight&locale=pt_BR&hide_border=true&background=0D1117&ring=38BDF8&fire=10B981&currStreakNum=FFFFFF" alt="GitHub Streak" />
+      <td width="50%" align="center" valign="middle">
+        <a href="https://github.com/davifeels" target="_blank">
+          <img src="https://github-readme-stats.vercel.app/api?username=davifeels&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=1a1b27&title_color=70a5fd&icon_color=38bdae&text_color=94A3B8" width="100%" alt="GitHub Stats" />
+        </a>
+      </td>
+      <td width="50%" align="center" valign="middle">
+        <a href="https://github.com/davifeels" target="_blank">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=davifeels&theme=tokyonight&hide_border=true&background=1a1b27&ring=70a5fd&fire=38bdae&currStreakNum=FFFFFF" width="100%" alt="GitHub Streak Stats" />
         </a>
       </td>
     </tr>
