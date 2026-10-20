@@ -1,15 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0F19,30:0F172A,70:1E293B,100:0284C7&height=220&section=header&text=Davi%20Anderson&fontSize=50&fontColor=ffffff&animation=fadeIn&desc=Desenvolvedor%20de%20Software%20%7C%20Backend%20Java%20%E2%80%A2%20Spring%20Boot%20%E2%80%A2%20PostgreSQL&descSize=18&descAlignY=68&descAlign=50" width="100%" alt="Davi Anderson Banner"/>
-  
-  <br>
-
-  <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Desenvolvedor+de+Software+%7C+Java+Backend+J%C3%BAnior;Spring+Boot+3+%E2%80%A2+APIs+RESTful+%E2%80%A2+Microsservi%C3%A7os;PostgreSQL+16+%E2%80%A2+Otimiza%C3%A7%C3%A3o+SQL+%E2%80%A2+Flyway;Docker+%E2%80%A2+Linux+VPS+%E2%80%A2+Nginx+%E2%80%A2+CI%2FCD;2+Anos+no+ITI+(Autarquia+Federal+-+Presid%C3%AAncia);Autor+do+PuffsZone+(No+Ar+em+Produ%C3%A7%C3%A3o+Real)" alt="Typing SVG" />
-  </a>
-
-  <br><br>
-
-  <img src="https://img.shields.io/badge/Dispon%C3%ADvel%20para%20Oportunidades-Java%20Backend%20J%C3%BAnior-10B981?style=for-the-badge&logo=codeforces&logoColor=white" alt="Disponível para Oportunidades · Java Backend Júnior" />
+  <img src="assets/header-core.svg" width="100%" alt="Davi Anderson Header"/>
 
   <br><br>
 
@@ -27,20 +17,13 @@
       <img src="https://img.shields.io/badge/WhatsApp-(61)%2099428--5138-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
     </a>
   </p>
-
-  <div>
-    <img src="https://img.shields.io/badge/Experiência-2%20Anos%20no%20ITI-10B981?style=for-the-badge&logo=gov.br&logoColor=white" alt="2 Anos no ITI"/>
-    <img src="https://img.shields.io/badge/Backend-Java%2021%20%7C%20Spring%20Boot%203-0284C7?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java Spring"/>
-    <img src="https://img.shields.io/badge/Banco%20de%20Dados-PostgreSQL%2016-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-    <img src="https://img.shields.io/badge/Infra-Docker%20%26%20Linux%20VPS-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  </div>
 </div>
 
 <br>
 
 ---
 
-## 👨‍🚀 Sobre Mim
+## 👨‍🚀 Sobre Mim & Telemetria do Sistema
 
 <div align="center">
 
@@ -59,7 +42,11 @@ Desenvolvedor backend com **dois anos de experiência prática de estágio no In
 
 Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema completo de gestão comercial e ponto de venda (PDV) publicado e operando em ambiente real de produção em VPS Linux com **Java 21, Spring Boot 3, React 19, TypeScript, PostgreSQL 16, Flyway e Docker Compose** sob proxy reverso Nginx e HTTPS.
 
-Cursa **Tecnologia em Banco de Dados na UniCesumar** (conclusão prevista em 02/2027) e busca oportunidade profissional como **Desenvolvedor Java Júnior**.
+<br>
+
+<div align="center">
+  <img src="assets/terminal.svg" width="100%" alt="Terminal CLI Telemetry"/>
+</div>
 
 <br>
 
@@ -197,6 +184,13 @@ Cursa **Tecnologia em Banco de Dados na UniCesumar** (conclusão prevista em 02/
     </td>
   </tr>
 </table>
+
+<br>
+
+#### 📐 Arquitetura de Produção do PuffsZone (Docker + Linux VPS)
+<div align="center">
+  <img src="assets/architecture.svg" width="100%" alt="PuffsZone System Architecture"/>
+</div>
 
 <br>
 
@@ -389,10 +383,6 @@ Cursa **Tecnologia em Banco de Dados na UniCesumar** (conclusão prevista em 02/
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E293B,100:0284C7&height=120&section=footer" width="100%" alt="Footer Banner"/>
-  
-  <br>
-  
   <p>
     <em>Construindo arquiteturas resilientes, APIs de alta velocidade e engenharia de dados moderna.</em><br>
     <strong>Vamos conversar?</strong> Conecte-se comigo pelo <a href="https://linkedin.com/in/davi-tech"><strong>LinkedIn</strong></a> ou pelo <a href="https://wa.me/5561994285138"><strong>WhatsApp</strong></a>.
