@@ -332,11 +332,6 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
         🏫 UniCesumar · <em>Conclusão prevista: Fevereiro de 2027 (02/2027)</em><br>
         <small>Foco em modelagem relacional, otimização de consultas SQL, integridade transacional ACID e governança de dados.</small>
       </p>
-      <p>
-        <strong>Técnico em Programador de Sistemas</strong><br>
-        🏫 Senac-DF · <em>Concluído</em><br>
-        <small>Fundamentos de lógica de programação, arquitetura cliente-servidor, POO e bancos relacionais.</small>
-      </p>
     </td>
     <td width="50%" valign="top">
       <h3>☁️ Cursos & Especializações</h3>
