@@ -157,7 +157,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <table width="100%">
   <tr>
-    <td width="36%" align="center" valign="middle">
+    <td width="30%" align="center" valign="top">
       <a href="https://github.com/davifeels/aegis-core" target="_blank">
         <img src="assets/aegiscore.svg" width="100%" alt="AegisCore" />
       </a>
@@ -166,11 +166,17 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
         <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
       </a>
       <br>
+      <img src="https://img.shields.io/badge/Stack-Java%2025%20%7C%20Spring%20Boot-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 25"/>
+      <br>
       <img src="https://img.shields.io/badge/Security-RBAC%20%2B%20Audit-0284C7?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Security"/>
       <br>
-      <img src="https://img.shields.io/badge/Testcontainers-Zero%20H2%20Mocks-10B981?style=for-the-badge&logo=docker&logoColor=white" alt="Testcontainers"/>
+      <img src="https://img.shields.io/badge/Database-PostgreSQL%2018-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres"/>
+      <br>
+      <img src="https://img.shields.io/badge/Testes-Testcontainers-10B981?style=for-the-badge&logo=docker&logoColor=white" alt="Testcontainers"/>
+      <br>
+      <img src="https://img.shields.io/badge/Cloud-AWS%20Blueprint-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
     </td>
-    <td width="64%" valign="top">
+    <td width="70%" valign="top">
       <p>
         <strong>Plataforma corporativa de governança e inventário de ativos multinuvem (AWS, Azure, GCP):</strong>
         Construída com <strong>Java 25</strong> e <strong>Spring Boot 4</strong>, implementa controle de acesso granular RBAC com senhas em BCrypt, isolamento transacional estrito e trilha de auditoria desacoplada pós-commit.
@@ -195,7 +201,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <table width="100%">
   <tr>
-    <td width="36%" align="center" valign="middle">
+    <td width="30%" align="center" valign="top">
       <a href="https://puffszone.tech" target="_blank">
         <img src="assets/puffszone.png" width="100%" alt="PuffsZone Demo" />
       </a>
@@ -208,9 +214,15 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
         <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
       </a>
       <br>
-      <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo%20%26%20Operacional-10B981?style=for-the-badge" alt="Concluído"/>
+      <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo%20%26%20Ativo-0284C7?style=for-the-badge" alt="Concluído"/>
+      <br>
+      <img src="https://img.shields.io/badge/Backend-Java%2021%20%7C%20Spring%203-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+      <br>
+      <img src="https://img.shields.io/badge/Frontend-React%2019%20%7C%20TS-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19"/>
+      <br>
+      <img src="https://img.shields.io/badge/Deploy-VPS%20Linux%20%2B%20Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
     </td>
-    <td width="64%" valign="top">
+    <td width="70%" valign="top">
       <p>
         <strong>Sistema comercial completo concluído e operacional em ambiente real de produção:</strong>
         Plataforma empresarial de gestão com <strong>Ponto de Venda (PDV) de alta performance</strong>, fechamento cego de turnos de caixa, controle rigoroso de estoque com transações atômicas, contas a pagar/receber e cupons de desconto.
@@ -241,7 +253,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <table width="100%">
   <tr>
-    <td width="36%" align="center" valign="middle">
+    <td width="30%" align="center" valign="top">
       <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
         <img src="assets/logorisk.png" width="100%" alt="RiskCore AI Demo" />
       </a>
@@ -250,11 +262,19 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
         <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
       </a>
       <br>
+      <img src="https://img.shields.io/badge/Vigil%C3%A2ncia-9%2B%20Canais%2024%2F7-7C3AED?style=for-the-badge" alt="9+ Canais"/>
+      <br>
       <img src="https://img.shields.io/badge/Cofre%20Pericial-SHA--256%20ISO%2F27037-0284C7?style=for-the-badge" alt="ISO 27037"/>
       <br>
-      <img src="https://img.shields.io/badge/IA%20Ac%C3%BAstica-Faster--Whisper-7C3AED?style=for-the-badge" alt="Faster-Whisper"/>
+      <img src="https://img.shields.io/badge/IA%20Ac%C3%BAstica-Faster--Whisper-10B981?style=for-the-badge" alt="Faster-Whisper"/>
+      <br>
+      <img src="https://img.shields.io/badge/Arsenal-10%2B%20Contramedidas-EF4444?style=for-the-badge" alt="Contramedidas"/>
+      <br>
+      <img src="https://img.shields.io/badge/Stack-NestJS%20%7C%20Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Nest + Next"/>
+      <br>
+      <img src="https://img.shields.io/badge/Database-Postgres%20%2B%20Redis-336791?style=for-the-badge&logo=redis&logoColor=white" alt="Postgres + Redis"/>
     </td>
-    <td width="64%" valign="top">
+    <td width="70%" valign="top">
       <p>
         <strong>Plataforma corporativa de inteligência cibernética, monitoramento estratégico e defesa reputacional 24/7:</strong>
         Solução integrada para proteção de marcas e lideranças contra desinformação coordenada, com vigilância multicanal contínua, análise semântica de riscos com IA, cofre pericial de evidências com cadeia de custódia e arsenal de contramedidas automatizadas.
@@ -280,14 +300,20 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <table width="100%">
   <tr>
-    <td width="36%" align="center" valign="middle">
+    <td width="30%" align="center" valign="top">
       <img src="assets/datapretection.png" width="100%" alt="DataProtection Demo" />
       <br><br>
       <img src="https://img.shields.io/badge/Ambiente-ITI%20%C2%B7%20Governo%20Federal-0284C7?style=for-the-badge&logo=gov.br&logoColor=white" alt="Governo Federal"/>
       <br>
       <img src="https://img.shields.io/badge/Conformidade-LGPD%20Art.%2037-10B981?style=for-the-badge" alt="LGPD"/>
+      <br>
+      <img src="https://img.shields.io/badge/Backend-Java%20%7C%20Spring%20Boot-ED8B00?style=for-the-badge&logo=spring&logoColor=white" alt="Java Spring"/>
+      <br>
+      <img src="https://img.shields.io/badge/Frontend-Angular%20Institucional-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
+      <br>
+      <img src="https://img.shields.io/badge/Seguran%C3%A7a-RBAC%20Granular-6366F1?style=for-the-badge" alt="RBAC"/>
     </td>
-    <td width="64%" valign="top">
+    <td width="70%" valign="top">
       <p>
         <strong>Projeto institucional desenvolvido no Instituto Nacional de Tecnologia da Informação (ITI):</strong>
         Catalogação e auditoria de operações de tratamento de dados pessoais conforme as diretrizes do Art. 37 da LGPD.
@@ -310,7 +336,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <table width="100%">
   <tr>
-    <td width="36%" align="center" valign="middle">
+    <td width="30%" align="center" valign="top">
       <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
         <img src="assets/logonexus.png" width="100%" alt="Nexus AI Demo" />
       </a>
@@ -319,9 +345,15 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
         <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
       </a>
       <br>
-      <img src="https://img.shields.io/badge/Database-pgvector%20%2B%20PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector"/>
+      <img src="https://img.shields.io/badge/Database-pgvector%20%2B%20Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector"/>
+      <br>
+      <img src="https://img.shields.io/badge/API-Python%20%7C%20FastAPI-3776AB?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
+      <br>
+      <img src="https://img.shields.io/badge/Arquitetura-RAG%20%2B%20Mem%C3%B3ria-8B5CF6?style=for-the-badge" alt="RAG"/>
+      <br>
+      <img src="https://img.shields.io/badge/Infra-Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
     </td>
-    <td width="64%" valign="top">
+    <td width="70%" valign="top">
       <p>
         Assistente de inteligência artificial com memória de longo prazo e mecanismo de busca semântica vetorial avançada.
       </p>
@@ -343,14 +375,20 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <table width="100%">
   <tr>
-    <td width="36%" align="center" valign="middle">
+    <td width="30%" align="center" valign="top">
       <img src="assets/sistemadereconhecimentofacial.gif" width="100%" alt="Rekkon MDM Demo" />
       <br><br>
       <img src="https://img.shields.io/badge/Mobile-Android%20Nativo-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
       <br>
       <img src="https://img.shields.io/badge/Vis%C3%A3o%20Computacional-ML%20Kit-FF6F00?style=for-the-badge" alt="ML Kit"/>
+      <br>
+      <img src="https://img.shields.io/badge/Linguagem-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"/>
+      <br>
+      <img src="https://img.shields.io/badge/Controle-MDM%20Corporativo-0284C7?style=for-the-badge" alt="MDM"/>
+      <br>
+      <img src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Docker-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node"/>
     </td>
-    <td width="64%" valign="top">
+    <td width="70%" valign="top">
       <p>
         Gerenciamento remoto de dispositivos móveis (MDM) corporativo e controle parental com aplicativo nativo Android.
       </p>
@@ -377,18 +415,22 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
     <td width="50%" valign="top">
       <h3>🎓 Formação Acadêmica</h3>
       <p>
-        <strong>Tecnólogo em Banco de Dados (Curso Superior)</strong><br>
-        🏫 UniCesumar · <em>Conclusão prevista: Fevereiro de 2027 (02/2027)</em><br>
-        <small>Foco em modelagem relacional, otimização de consultas SQL, integridade transacional ACID e governança de dados.</small>
+        <strong>Tecnólogo em Banco de Dados (Curso Superior de Tecnologia)</strong><br>
+        🏫 <strong>UniCesumar</strong> · <em>Conclusão prevista: Fevereiro de 2027 (02/2027)</em>
       </p>
+      <ul>
+        <li><strong>Modelagem &amp; SQL Avançado:</strong> Modelagem relacional conceitual, lógica e física, normalização (3FN/BCNF), procedures, triggers e views complexas.</li>
+        <li><strong>Performance &amp; Tuning:</strong> Otimização com <code>EXPLAIN ANALYZE</code>, indexação estratégica (B-Tree/GIN) e resolução de gargalos de consulta.</li>
+        <li><strong>Transacionalidade &amp; Governança:</strong> Propriedades ACID, isolamento de transações, migrations com Flyway e conformidade com a LGPD.</li>
+      </ul>
     </td>
     <td width="50%" valign="top">
-      <h3>☁️ Cursos & Especializações</h3>
+      <h3>☁️ Especializações &amp; Nuvem</h3>
       <ul>
-        <li><strong>AWS Cloud Practitioner Essentials:</strong> Treinamento oficial AWS em computação em nuvem, segurança e escalabilidade.</li>
-        <li><strong>Amazon API Gateway for Serverless Applications:</strong> Arquitetura de microsserviços, roteamento e autenticação serverless.</li>
-        <li><strong>Introduction to Containers:</strong> Práticas de DevOps com Docker, orquestração Kubernetes e conteinerização.</li>
-        <li><strong>Security, Compliance and Governance for AI:</strong> Conformidade, privacidade e governança em soluções de IA.</li>
+        <li><strong>AWS Cloud Practitioner Essentials:</strong> Computação em nuvem, arquitetura resiliente, segurança IAM e alta disponibilidade AWS.</li>
+        <li><strong>Amazon API Gateway for Serverless:</strong> Concepção de APIs REST, roteamento de microsserviços, controle de tráfego e autorização.</li>
+        <li><strong>Introduction to Containers:</strong> Práticas DevOps de conteinerização com Docker, orquestração Kubernetes e entrega contínua.</li>
+        <li><strong>Security, Compliance &amp; Governance for AI:</strong> Conformidade legal, privacidade de dados sensíveis e auditoria de sistemas de IA.</li>
       </ul>
     </td>
   </tr>
