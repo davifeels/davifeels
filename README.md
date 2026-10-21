@@ -200,7 +200,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://puffszone.tech" target="_blank">
-    <img src="assets/puffszone.png" width="150" alt="PuffsZone Demo" />
+    <img src="assets/puffszone.svg" width="480" alt="PuffsZone - Commercial Management & Cloud POS" />
   </a>
 
   <br><br>
@@ -247,7 +247,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
-    <img src="assets/logorisk.png" width="160" alt="RiskCore AI Demo" />
+    <img src="assets/riskcore.svg" width="480" alt="RiskCore AI - Reputation Defense & Crisis Intelligence" />
   </a>
 
   <br><br>
@@ -287,7 +287,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 ### 4. 🛡️ DataProtection — Governança de Dados & LGPD
 
 <div align="center">
-  <img src="assets/datapretection.png" width="220" alt="DataProtection Demo" />
+  <img src="assets/dataprotection.svg" width="480" alt="DataProtection - Governança de Dados & LGPD" />
 
   <br><br>
 
@@ -324,7 +324,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
-    <img src="assets/logonexus.png" width="150" alt="Nexus AI Demo" />
+    <img src="assets/nexus.svg" width="480" alt="Nexus AI OS - Autonomous AI Assistant" />
   </a>
 
   <br><br>
@@ -363,7 +363,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 ### 6. 📱 Rekkon — MDM Mobile &amp; Controle Parental com Validação Facial
 
 <div align="center">
-  <img src="assets/sistemadereconhecimentofacial.gif" width="280" alt="Rekkon MDM Demo" />
+  <img src="assets/rekkon.svg" width="480" alt="Rekkon - MDM Mobile & Facial Validation" />
 
   <br><br>
 
@@ -388,6 +388,46 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,nodejs,docker&theme=dark" height="34"/>
+  <br><br>
+  <h4>📱 Demonstração do Reconhecimento Facial On-Device (Google ML Kit)</h4>
+  <img src="assets/sistemadereconhecimentofacial.gif" width="300" alt="Rekkon Face Detection Demo"/>
+</div>
+
+<br>
+
+---
+
+<br>
+
+### 7. ⚖️ Jurimetria Preditiva — Análise Judicial & RAG com GPT-4o
+
+<div align="center">
+  <img src="assets/jurimetria.svg" width="480" alt="Jurimetria Preditiva - LegalTech AI & Predictive Analytics" />
+
+  <br><br>
+
+  <p>
+    <img src="https://img.shields.io/badge/Status-LegalTech%20Privada-6366F1?style=for-the-badge" alt="LegalTech"/>
+    <img src="https://img.shields.io/badge/Stack-Python%20%7C%20FastAPI-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+    <img src="https://img.shields.io/badge/IA-RAG%20%2B%20GPT--4o-10B981?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-4o"/>
+    <img src="https://img.shields.io/badge/Database-pgvector%20%2B%20Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres"/>
+    <img src="https://img.shields.io/badge/Scraping-Playwright%20Anti--Bot-FF6F00?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright"/>
+  </p>
+</div>
+
+<br>
+
+**Plataforma LegalTech corporativa para coleta automatizada de jurisprudência e análise preditiva de decisões judiciais com IA generativa:**
+
+* **Scraping Jurídico Automatizado:** Pipeline de extração de acórdãos e decisões do TJBA com técnicas de anti-detecção via **Playwright**.
+* **Indexação Vetorial &amp; RAG:** Embeddings de alta dimensionalidade em **PostgreSQL com extensão pgvector** para busca semântica de teses jurídicas.
+* **Motor Preditivo em 5 Camadas:** Orquestração de **GPT-4o** para classificação de pedidos, perfil decisório por magistrado e probabilidades recursais.
+* **Dashboard Interativo:** Interface analítica em **Streamlit** com relatórios gerenciais e filtros dinâmicos de dados processuais.
+
+<br>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,postgres,docker,git&theme=dark" height="34"/>
 </div>
 
 <br>
