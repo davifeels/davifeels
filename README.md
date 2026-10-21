@@ -27,9 +27,9 @@
 
 <div align="center">
 
-| 🎯 Posicionamento | 🏛️ Vivência Prática | 🚀 Projeto Autoral | 🎓 Formação Acadêmica |
+| 🎯 Posicionamento | 🏛️ Vivência Prática | 🛡️ Projeto em Destaque | 🎓 Formação Acadêmica |
 | :---: | :---: | :---: | :---: |
-| **Backend Java Júnior**<br>APIs RESTful & Microsserviços | **2 Anos no ITI (Federal)**<br>18m Dev Java + 6m DBA Postgres | **PuffsZone (Em Produção)**<br>Java 21 · Spring 3 · React 19 · VPS | **Banco de Dados**<br>UniCesumar (Prev. 02/2027) |
+| **Backend Java Júnior**<br>APIs RESTful & Microsserviços | **2 Anos no ITI (Federal)**<br>18m Dev Java + 6m DBA Postgres | **AegisCore (Destaque)**<br>Java 25 · Spring Boot · Testcontainers | **Banco de Dados**<br>UniCesumar (Prev. 02/2027) |
 
 </div>
 
@@ -40,7 +40,9 @@ Desenvolvedor backend com **dois anos de experiência prática de estágio no In
 * **18 meses em desenvolvimento com Java e Spring Boot**: Microsserviços, arquitetura limpa em camadas, APIs RESTful, testes automatizados (JUnit 5, Mockito), integração entre sistemas corporativos, autenticação/autorização stateless com **JWT**, criptografia (**RSA/AES**), controle de acesso por perfis (**RBAC**) e auditoria de ações críticas.
 * **6 meses em administração de bancos de dados PostgreSQL**: Desenvolvimento SQL avançado (**procedures, triggers, views complexas, funções**), modelagem relacional, rotinas ETL e otimização contínua de consultas com planos de execução (`EXPLAIN ANALYZE`), alcançando **melhoria de latência em 40%**.
 
-Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema completo de gestão comercial e ponto de venda (PDV) publicado e operando em ambiente real de produção em VPS Linux com **Java 21, Spring Boot 3, React 19, TypeScript, PostgreSQL 16, Flyway e Docker Compose** sob proxy reverso Nginx e HTTPS.
+Autor e desenvolvedor do **[AegisCore](https://github.com/davifeels/aegis-core)**, plataforma corporativa de segurança, governança e inventário de ativos multinuvem desenvolvida com **Java 25**, **Spring Boot**, controle de acesso granular **RBAC** com senhas em BCrypt, auditoria transacional desacoplada pós-commit (`@TransactionalEventListener`), migrations determinísticas com **Flyway** e testes herméticos de integração com **Testcontainers**.
+
+Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial completo e Ponto de Venda (PDV) **concluído e operacional em ambiente real de produção** em VPS Linux com **Java 21, Spring Boot 3, React 19, TypeScript, PostgreSQL 16, Flyway e Docker Compose** sob proxy reverso Nginx e HTTPS Let's Encrypt, e do **[RiskCore AI](https://github.com/davifeels/RiskCore-AI)**, solução de inteligência de dados, monitoramento multicanal 24/7 e cofre pericial de evidências com IA.
 
 <br>
 
@@ -151,7 +153,45 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
 
 ## 🚀 Projetos em Destaque
 
-### 1. 🛒 PuffsZone — Sistema de Gestão Comercial e PDV
+### 1. 🛡️ AegisCore — Plataforma de Segurança, Governança Cloud & Auditoria (Destaque Principal)
+
+<table width="100%">
+  <tr>
+    <td width="36%" align="center" valign="middle">
+      <a href="https://github.com/davifeels/aegis-core" target="_blank">
+        <img src="assets/aegiscore.svg" width="100%" alt="AegisCore" />
+      </a>
+      <br><br>
+      <a href="https://github.com/davifeels/aegis-core" target="_blank">
+        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+      </a>
+      <br>
+      <img src="https://img.shields.io/badge/Security-RBAC%20%2B%20Audit-0284C7?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Security"/>
+      <br>
+      <img src="https://img.shields.io/badge/Testcontainers-Zero%20H2%20Mocks-10B981?style=for-the-badge&logo=docker&logoColor=white" alt="Testcontainers"/>
+    </td>
+    <td width="64%" valign="top">
+      <p>
+        <strong>Plataforma corporativa de governança e inventário de ativos multinuvem (AWS, Azure, GCP):</strong>
+        Construída com <strong>Java 25</strong> e <strong>Spring Boot 4</strong>, implementa controle de acesso granular RBAC com senhas em BCrypt, isolamento transacional estrito e trilha de auditoria desacoplada pós-commit.
+      </p>
+      <ul>
+        <li><strong>Segurança &amp; RBAC:</strong> Autenticação HTTP Basic stateless com segregação de perfis (<code>ADMIN</code> para mutações e consulta irrestrita da trilha de auditoria; <code>USER</code> para leitura estrita do inventário).</li>
+        <li><strong>Auditoria Transacional Desacoplada:</strong> Eventos de domínio interceptados pós-commit via <code>@TransactionalEventListener(phase = AFTER_COMMIT)</code> e persistidos em transação independente isolada (<code>REQUIRES_NEW</code>). Se o negócio falhar, o log não é gravado; se o log falhar, a operação confirmada não é corrompida.</li>
+        <li><strong>Filtros Dinâmicos &amp; Paginação:</strong> Trilha de auditoria com JPA Specification (<code>AuditLogSpecifications</code>), suportando consultas combinadas por usuário, ação, período, IP de origem e paginação nativa Spring Data.</li>
+        <li><strong>Testes Herméticos com Testcontainers:</strong> Suíte de testes de integração executando instância efêmera real de <strong>PostgreSQL 18</strong> via Docker (<code>jdbc:tc:postgresql:18-alpine</code>), eliminando discrepâncias de dialetos SQL do H2.</li>
+        <li><strong>DevOps &amp; Nuvem AWS:</strong> Pipeline automatizado no <strong>GitHub Actions</strong> e blueprint arquitetural desenhado para implantação na AWS (ECS Fargate, RDS PostgreSQL Multi-AZ, Secrets Manager e CloudWatch).</li>
+      </ul>
+      <p>
+        <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,githubactions&theme=dark" height="34"/>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 2. 🛒 PuffsZone — Sistema de Gestão Comercial e PDV (Concluído & Operacional)
 
 <table width="100%">
   <tr>
@@ -167,16 +207,19 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
       <a href="https://github.com/davifeels/PuffsZone" target="_blank">
         <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
       </a>
+      <br>
+      <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo%20%26%20Operacional-10B981?style=for-the-badge" alt="Concluído"/>
     </td>
     <td width="64%" valign="top">
       <p>
-        <strong>Projeto próprio em produção real na web:</strong> Sistema comercial completo com <strong>Ponto de Venda (PDV) de alta performance</strong>, controle rigoroso de estoque, fechamento de turnos de caixa, fluxo financeiro (contas a pagar/receber) e cupons de desconto.
+        <strong>Sistema comercial completo concluído e operacional em ambiente real de produção:</strong>
+        Plataforma empresarial de gestão com <strong>Ponto de Venda (PDV) de alta performance</strong>, fechamento cego de turnos de caixa, controle rigoroso de estoque com transações atômicas, contas a pagar/receber e cupons de desconto.
       </p>
       <ul>
-        <li><strong>Backend & Segurança:</strong> Arquitetura limpa com <strong>Java 21</strong> e <strong>Spring Boot 3</strong>, Spring Security, autenticação stateless via JWT, auditoria e RBAC.</li>
-        <li><strong>Banco de Dados & Migrations:</strong> <strong>PostgreSQL 16</strong> com versionamento contínuo de banco via <strong>Flyway</strong>.</li>
-        <li><strong>Frontend Moderno:</strong> Interface reativa construída com <strong>React 19</strong>, <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>.</li>
-        <li><strong>Infraestrutura & Deploy Real:</strong> VPS Linux, conteinerização com <strong>Docker Compose</strong>, proxy reverso <strong>Nginx</strong> e certificado SSL/HTTPS Let's Encrypt ativo.</li>
+        <li><strong>Backend &amp; Segurança:</strong> Arquitetura limpa em camadas com <strong>Java 21</strong> e <strong>Spring Boot 3</strong>, Spring Security, autenticação stateless via JWT, auditoria e RBAC.</li>
+        <li><strong>Banco de Dados &amp; Migrations:</strong> <strong>PostgreSQL 16</strong> com versionamento contínuo de banco via <strong>Flyway</strong> e pool de conexões otimizado com HikariCP.</li>
+        <li><strong>Frontend Moderno:</strong> Interface reativa de alta usabilidade construída com <strong>React 19</strong>, <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>.</li>
+        <li><strong>Infraestrutura &amp; Deploy em VPS:</strong> Orquestrado com <strong>Docker Compose</strong> em VPS Linux, proxy reverso <strong>Nginx</strong> e certificado SSL/HTTPS Let's Encrypt ativo.</li>
       </ul>
       <p>
         <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,react,ts,tailwind,nginx,linux&theme=dark" height="34"/>
@@ -194,7 +237,46 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
 
 <br>
 
-### 2. 🛡️ DataProtection — Governança de Dados & LGPD
+### 3. 📡 RiskCore AI — Inteligência de Dados, Monitoramento Multicanal & Defesa Reputacional
+
+<table width="100%">
+  <tr>
+    <td width="36%" align="center" valign="middle">
+      <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
+        <img src="assets/logorisk.png" width="100%" alt="RiskCore AI Demo" />
+      </a>
+      <br><br>
+      <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
+        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+      </a>
+      <br>
+      <img src="https://img.shields.io/badge/Cofre%20Pericial-SHA--256%20ISO%2F27037-0284C7?style=for-the-badge" alt="ISO 27037"/>
+      <br>
+      <img src="https://img.shields.io/badge/IA%20Ac%C3%BAstica-Faster--Whisper-7C3AED?style=for-the-badge" alt="Faster-Whisper"/>
+    </td>
+    <td width="64%" valign="top">
+      <p>
+        <strong>Plataforma corporativa de inteligência cibernética, monitoramento estratégico e defesa reputacional 24/7:</strong>
+        Solução integrada para proteção de marcas e lideranças contra desinformação coordenada, com vigilância multicanal contínua, análise semântica de riscos com IA, cofre pericial de evidências com cadeia de custódia e arsenal de contramedidas automatizadas.
+      </p>
+      <ul>
+        <li><strong>Vigilância Multicanal 24/7 (9+ Plataformas):</strong> Ingestão contínua a cada 5 minutos monitorando Instagram (API privada móvel), TikTok, Twitter/X (API v2), YouTube Data v3, Telegram (35+ canais), Reddit, Google News via CSE, Meta Ads Library e Diários Oficiais.</li>
+        <li><strong>Motor de IA &amp; Análise Semântica de Riscos:</strong> Algoritmo de NLP com normalização de texto, detecção de ironias/ofensas, cálculo de <code>RiskScore</code> dinâmico ponderado, identificação de redes coordenadas (<em>astroturfing</em>) e deepfakes.</li>
+        <li><strong>Cofre Pericial de Provas (Cadeia de Custódia):</strong> Congelamento probatório instantâneo com captura de tela em alta resolução e espelhamento HTML integral via Playwright. Geração de hash criptográfico <strong>SHA-256</strong> e laudos em PDF em conformidade com o CPP (Art. 158-A a 158-F) e ABNT NBR ISO/IEC 27037.</li>
+        <li><strong>Arsenal de Contramedidas Automatizadas:</strong> Protocolos de resposta rápida com minutas para notificações (Marco Civil Art. 19), takedowns DMCA, flagging em bases de reputação (VirusTotal e Google Web Risk) e desindexação de URLs difamatórias.</li>
+        <li><strong>Inteligência Acústica com Faster-Whisper:</strong> Worker em Python 3.11 executando <code>faster-whisper</code> (CTranslate2 int8) para transcrição contínua em tempo real de emissoras de rádio via streaming, com buffer circular de 10 segundos pré-roll para preservação contextual.</li>
+        <li><strong>Centro de Comando Reativo (50+ Visões):</strong> Interface analítica em <strong>Next.js 14 App Router</strong>, React 18, Tailwind CSS e WebSockets/Socket.IO, sustentada por backend em <strong>NestJS 10</strong>, <strong>PostgreSQL 16</strong> com <strong>Prisma ORM</strong> e <strong>Redis 7</strong> com BullMQ.</li>
+      </ul>
+      <p>
+        <img src="https://skillicons.dev/icons?i=nodejs,ts,react,nextjs,postgres,prisma,redis,py,docker&theme=dark" height="34"/>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 4. 🛡️ DataProtection — Governança de Dados & LGPD
 
 <table width="100%">
   <tr>
@@ -217,74 +299,6 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
       </ul>
       <p>
         <img src="https://skillicons.dev/icons?i=java,spring,angular,postgres,docker,git&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-### 3. 🛡️ AegisCore — Plataforma de Segurança &amp; Governança de Nuvem
-
-<table width="100%">
-  <tr>
-    <td width="36%" align="center" valign="middle">
-      <a href="https://github.com/davifeels/aegis-core" target="_blank">
-        <img src="assets/aegiscore.svg" width="100%" alt="AegisCore" />
-      </a>
-      <br><br>
-      <a href="https://github.com/davifeels/aegis-core" target="_blank">
-        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
-      </a>
-      <br>
-      <img src="https://img.shields.io/badge/Security-RBAC%20%2B%20Audit-0284C7?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Security"/>
-    </td>
-    <td width="64%" valign="top">
-      <p>
-        <strong>Plataforma corporativa de governança e inventário de ativos multinuvem (AWS, Azure, GCP):</strong>
-        Construída com <strong>Java 25</strong> e <strong>Spring Boot</strong>, implementa controle de acesso granular RBAC com senhas em BCrypt e trilha de auditoria transacional imutável.
-      </p>
-      <ul>
-        <li><strong>Segurança &amp; RBAC:</strong> Autenticação HTTP Basic stateless com segregação de perfis (ADMIN para mutações e logs; USER para consulta de inventário).</li>
-        <li><strong>Auditoria Transacional Desacoplada:</strong> Eventos Spring interceptados pós-commit (<code>@TransactionalEventListener(phase = AFTER_COMMIT)</code>) com persistência isolada (<code>REQUIRES_NEW</code>).</li>
-        <li><strong>Banco de Dados &amp; Migrations:</strong> <strong>PostgreSQL 18</strong> versionado via <strong>Flyway</strong> com índices B-Tree temporais e filtros dinâmicos via JPA Specification.</li>
-        <li><strong>Testes Herméticos:</strong> Suíte de testes de integração isolados com <strong>Testcontainers</strong> (Postgres efêmero via Docker) integrada ao GitHub Actions.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,githubactions&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-### 4. 📡 RiskCore AI — Monitoramento Reputacional &amp; Análise Preditiva
-
-<table width="100%">
-  <tr>
-    <td width="36%" align="center" valign="middle">
-      <a href="https://github.com/davifeels/riskcore-ai-frontend" target="_blank">
-        <img src="assets/logorisk.png" width="100%" alt="RiskCore AI Demo" />
-      </a>
-      <br><br>
-      <a href="https://github.com/davifeels/riskcore-ai-frontend" target="_blank">
-        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
-      </a>
-      <br>
-      <img src="https://img.shields.io/badge/IA-Detec%C3%A7%C3%A3o%20de%20Risco-7C3AED?style=for-the-badge" alt="IA"/>
-    </td>
-    <td width="64%" valign="top">
-      <p>
-        Centro de comando de inteligência reputacional para monitoramento contínuo, detecção preditiva de crises e classificação de riscos orientada por Inteligência Artificial.
-      </p>
-      <ul>
-        <li><strong>Arquitetura Reativa:</strong> Integração fluida entre backend de eventos e interface analítica em tempo real.</li>
-        <li><strong>Persistência & Aceleração:</strong> Banco relacional <strong>PostgreSQL</strong> com <strong>Prisma ORM</strong> e camada de cache em <strong>Redis</strong> para consultas instantâneas.</li>
-        <li><strong>Stack Moderna:</strong> Desenvolvido com <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>React</strong> e <strong>Next.js</strong>.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=nodejs,ts,react,nextjs,postgres,prisma,redis&theme=dark" height="34"/>
       </p>
     </td>
   </tr>
