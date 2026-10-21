@@ -157,7 +157,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://github.com/davifeels/aegis-core" target="_blank">
-    <img src="assets/aegiscore.svg" width="100%" alt="AegisCore - Cloud Security & Asset Platform" />
+    <img src="assets/aegiscore.svg" width="480" alt="AegisCore - Cloud Security & Asset Platform" />
   </a>
 
   <br><br>
@@ -200,7 +200,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://puffszone.tech" target="_blank">
-    <img src="assets/puffszone.png" width="100%" alt="PuffsZone Demo" />
+    <img src="assets/puffszone.png" width="150" alt="PuffsZone Demo" />
   </a>
 
   <br><br>
@@ -247,7 +247,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
-    <img src="assets/logorisk.png" width="220" alt="RiskCore AI Demo" />
+    <img src="assets/logorisk.png" width="160" alt="RiskCore AI Demo" />
   </a>
 
   <br><br>
@@ -287,7 +287,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 ### 4. 🛡️ DataProtection — Governança de Dados & LGPD
 
 <div align="center">
-  <img src="assets/datapretection.png" width="100%" alt="DataProtection Demo" />
+  <img src="assets/datapretection.png" width="220" alt="DataProtection Demo" />
 
   <br><br>
 
@@ -324,7 +324,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 <div align="center">
   <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
-    <img src="assets/logonexus.png" width="100%" alt="Nexus AI Demo" />
+    <img src="assets/logonexus.png" width="150" alt="Nexus AI Demo" />
   </a>
 
   <br><br>
@@ -363,7 +363,7 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 ### 6. 📱 Rekkon — MDM Mobile &amp; Controle Parental com Validação Facial
 
 <div align="center">
-  <img src="assets/sistemadereconhecimentofacial.gif" width="100%" alt="Rekkon MDM Demo" />
+  <img src="assets/sistemadereconhecimentofacial.gif" width="280" alt="Rekkon MDM Demo" />
 
   <br><br>
 
