@@ -155,254 +155,242 @@ Também sou autor do **[PuffsZone](https://puffszone.tech)**, sistema comercial 
 
 ### 1. 🛡️ AegisCore — Plataforma de Segurança, Governança Cloud & Auditoria (Destaque Principal)
 
-<table width="100%">
-  <tr>
-    <td width="30%" align="center" valign="top">
-      <a href="https://github.com/davifeels/aegis-core" target="_blank">
-        <img src="assets/aegiscore.svg" width="100%" alt="AegisCore" />
-      </a>
-      <br><br>
-      <a href="https://github.com/davifeels/aegis-core" target="_blank">
-        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
-      </a>
-      <br>
-      <img src="https://img.shields.io/badge/Stack-Java%2025%20%7C%20Spring%20Boot-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 25"/>
-      <br>
-      <img src="https://img.shields.io/badge/Security-RBAC%20%2B%20Audit-0284C7?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Security"/>
-      <br>
-      <img src="https://img.shields.io/badge/Database-PostgreSQL%2018-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres"/>
-      <br>
-      <img src="https://img.shields.io/badge/Testes-Testcontainers-10B981?style=for-the-badge&logo=docker&logoColor=white" alt="Testcontainers"/>
-      <br>
-      <img src="https://img.shields.io/badge/Cloud-AWS%20Blueprint-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
-    </td>
-    <td width="70%" valign="top">
-      <p>
-        <strong>Plataforma corporativa de governança e inventário de ativos multinuvem (AWS, Azure, GCP):</strong>
-        Construída com <strong>Java 25</strong> e <strong>Spring Boot 4</strong>, implementa controle de acesso granular RBAC com senhas em BCrypt, isolamento transacional estrito e trilha de auditoria desacoplada pós-commit.
-      </p>
-      <ul>
-        <li><strong>Segurança &amp; RBAC:</strong> Autenticação HTTP Basic stateless com segregação de perfis (<code>ADMIN</code> para mutações e consulta irrestrita da trilha de auditoria; <code>USER</code> para leitura estrita do inventário).</li>
-        <li><strong>Auditoria Transacional Desacoplada:</strong> Eventos de domínio interceptados pós-commit via <code>@TransactionalEventListener(phase = AFTER_COMMIT)</code> e persistidos em transação independente isolada (<code>REQUIRES_NEW</code>). Se o negócio falhar, o log não é gravado; se o log falhar, a operação confirmada não é corrompida.</li>
-        <li><strong>Filtros Dinâmicos &amp; Paginação:</strong> Trilha de auditoria com JPA Specification (<code>AuditLogSpecifications</code>), suportando consultas combinadas por usuário, ação, período, IP de origem e paginação nativa Spring Data.</li>
-        <li><strong>Testes Herméticos com Testcontainers:</strong> Suíte de testes de integração executando instância efêmera real de <strong>PostgreSQL 18</strong> via Docker (<code>jdbc:tc:postgresql:18-alpine</code>), eliminando discrepâncias de dialetos SQL do H2.</li>
-        <li><strong>DevOps &amp; Nuvem AWS:</strong> Pipeline automatizado no <strong>GitHub Actions</strong> e blueprint arquitetural desenhado para implantação na AWS (ECS Fargate, RDS PostgreSQL Multi-AZ, Secrets Manager e CloudWatch).</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,githubactions&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/davifeels/aegis-core" target="_blank">
+    <img src="assets/aegiscore.svg" width="100%" alt="AegisCore - Cloud Security & Asset Platform" />
+  </a>
+
+  <br><br>
+
+  <p>
+    <a href="https://github.com/davifeels/aegis-core" target="_blank">
+      <img src="https://img.shields.io/badge/C%C3%B3digo%20Fonte-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+    </a>
+    <img src="https://img.shields.io/badge/Stack-Java%2025%20%7C%20Spring%20Boot%204-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 25"/>
+    <img src="https://img.shields.io/badge/Security-RBAC%20%2B%20Audit-0284C7?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Security"/>
+    <img src="https://img.shields.io/badge/Database-PostgreSQL%2018-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres"/>
+    <img src="https://img.shields.io/badge/Testes-Testcontainers-10B981?style=for-the-badge&logo=docker&logoColor=white" alt="Testcontainers"/>
+    <img src="https://img.shields.io/badge/Cloud-AWS%20Blueprint-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+  </p>
+</div>
+
+<br>
+
+**Plataforma corporativa de governança e inventário de ativos multinuvem (AWS, Azure, GCP):** Construída com **Java 25** e **Spring Boot 4**, implementa controle de acesso granular RBAC com senhas em BCrypt, isolamento transacional estrito e trilha de auditoria desacoplada pós-commit.
+
+* **Segurança &amp; RBAC:** Autenticação HTTP Basic stateless com segregação de perfis (<code>ADMIN</code> para mutações e consulta irrestrita da trilha de auditoria; <code>USER</code> para leitura estrita do inventário).
+* **Auditoria Transacional Desacoplada:** Eventos de domínio interceptados pós-commit via <code>@TransactionalEventListener(phase = AFTER_COMMIT)</code> e persistidos em transação independente isolada (<code>REQUIRES_NEW</code>). Se o negócio falhar, o log não é gravado; se o log falhar, a operação confirmada não é corrompida.
+* **Filtros Dinâmicos &amp; Paginação:** Trilha de auditoria com JPA Specification (<code>AuditLogSpecifications</code>), suportando consultas combinadas por usuário, ação, período, IP de origem e paginação nativa Spring Data.
+* **Testes Herméticos com Testcontainers:** Suíte de testes de integração executando instância efêmera real de <strong>PostgreSQL 18</strong> via Docker (<code>jdbc:tc:postgresql:18-alpine</code>), eliminando discrepâncias de dialetos SQL do H2.
+* **DevOps &amp; Nuvem AWS:** Pipeline automatizado no <strong>GitHub Actions</strong> e blueprint arquitetural desenhado para implantação na AWS (ECS Fargate, RDS PostgreSQL Multi-AZ, Secrets Manager e CloudWatch).
+
+<br>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,githubactions&theme=dark" height="34"/>
+</div>
+
+<br>
+
+---
 
 <br>
 
 ### 2. 🛒 PuffsZone — Sistema de Gestão Comercial e PDV (Concluído & Operacional)
 
-<table width="100%">
-  <tr>
-    <td width="30%" align="center" valign="top">
-      <a href="https://puffszone.tech" target="_blank">
-        <img src="assets/puffszone.png" width="100%" alt="PuffsZone Demo" />
-      </a>
-      <br><br>
-      <a href="https://puffszone.tech" target="_blank">
-        <img src="https://img.shields.io/badge/Acessar%20Sistema-puffszone.tech-10B981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"/>
-      </a>
-      <br>
-      <a href="https://github.com/davifeels/PuffsZone" target="_blank">
-        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
-      </a>
-      <br>
-      <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo%20%26%20Ativo-0284C7?style=for-the-badge" alt="Concluído"/>
-      <br>
-      <img src="https://img.shields.io/badge/Backend-Java%2021%20%7C%20Spring%203-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
-      <br>
-      <img src="https://img.shields.io/badge/Frontend-React%2019%20%7C%20TS-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19"/>
-      <br>
-      <img src="https://img.shields.io/badge/Deploy-VPS%20Linux%20%2B%20Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
-    </td>
-    <td width="70%" valign="top">
-      <p>
-        <strong>Sistema comercial completo concluído e operacional em ambiente real de produção:</strong>
-        Plataforma empresarial de gestão com <strong>Ponto de Venda (PDV) de alta performance</strong>, fechamento cego de turnos de caixa, controle rigoroso de estoque com transações atômicas, contas a pagar/receber e cupons de desconto.
-      </p>
-      <ul>
-        <li><strong>Backend &amp; Segurança:</strong> Arquitetura limpa em camadas com <strong>Java 21</strong> e <strong>Spring Boot 3</strong>, Spring Security, autenticação stateless via JWT, auditoria e RBAC.</li>
-        <li><strong>Banco de Dados &amp; Migrations:</strong> <strong>PostgreSQL 16</strong> com versionamento contínuo de banco via <strong>Flyway</strong> e pool de conexões otimizado com HikariCP.</li>
-        <li><strong>Frontend Moderno:</strong> Interface reativa de alta usabilidade construída com <strong>React 19</strong>, <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>.</li>
-        <li><strong>Infraestrutura &amp; Deploy em VPS:</strong> Orquestrado com <strong>Docker Compose</strong> em VPS Linux, proxy reverso <strong>Nginx</strong> e certificado SSL/HTTPS Let's Encrypt ativo.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,react,ts,tailwind,nginx,linux&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://puffszone.tech" target="_blank">
+    <img src="assets/puffszone.png" width="100%" alt="PuffsZone Demo" />
+  </a>
+
+  <br><br>
+
+  <p>
+    <a href="https://puffszone.tech" target="_blank">
+      <img src="https://img.shields.io/badge/Acessar%20Sistema-puffszone.tech-10B981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"/>
+    </a>
+    <a href="https://github.com/davifeels/PuffsZone" target="_blank">
+      <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+    </a>
+    <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo%20%26%20Ativo-0284C7?style=for-the-badge" alt="Concluído"/>
+    <img src="https://img.shields.io/badge/Backend-Java%2021%20%7C%20Spring%203-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+    <img src="https://img.shields.io/badge/Frontend-React%2019%20%7C%20TS-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19"/>
+    <img src="https://img.shields.io/badge/Deploy-VPS%20Linux%20%2B%20Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
+  </p>
+</div>
 
 <br>
 
-#### 📐 Arquitetura de Produção do PuffsZone (Docker + Linux VPS)
+**Sistema comercial completo concluído e operacional em ambiente real de produção:** Plataforma empresarial de gestão com **Ponto de Venda (PDV) de alta performance**, fechamento cego de turnos de caixa, controle rigoroso de estoque com transações atômicas, contas a pagar/receber e cupons de desconto.
+
+* **Backend &amp; Segurança:** Arquitetura limpa em camadas com **Java 21** e **Spring Boot 3**, Spring Security, autenticação stateless via JWT, auditoria e RBAC.
+* **Banco de Dados &amp; Migrations:** **PostgreSQL 16** com versionamento contínuo de banco via **Flyway** e pool de conexões otimizado com HikariCP.
+* **Frontend Moderno:** Interface reativa de alta usabilidade construída com **React 19**, **TypeScript** e **Tailwind CSS**.
+* **Infraestrutura &amp; Deploy em VPS:** Orquestrado com **Docker Compose** em VPS Linux, proxy reverso **Nginx** e certificado SSL/HTTPS Let's Encrypt ativo.
+
+<br>
+
 <div align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,react,ts,tailwind,nginx,linux&theme=dark" height="34"/>
+  <br><br>
+  <h4>📐 Arquitetura de Produção do PuffsZone (Docker + Linux VPS)</h4>
   <img src="assets/architecture.svg" width="100%" alt="PuffsZone System Architecture"/>
 </div>
 
 <br>
 
+---
+
+<br>
+
 ### 3. 📡 RiskCore AI — Inteligência de Dados, Monitoramento Multicanal & Defesa Reputacional
 
-<table width="100%">
-  <tr>
-    <td width="30%" align="center" valign="top">
-      <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
-        <img src="assets/logorisk.png" width="100%" alt="RiskCore AI Demo" />
-      </a>
-      <br><br>
-      <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
-        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
-      </a>
-      <br>
-      <img src="https://img.shields.io/badge/Vigil%C3%A2ncia-9%2B%20Canais%2024%2F7-7C3AED?style=for-the-badge" alt="9+ Canais"/>
-      <br>
-      <img src="https://img.shields.io/badge/Cofre%20Pericial-SHA--256%20ISO%2F27037-0284C7?style=for-the-badge" alt="ISO 27037"/>
-      <br>
-      <img src="https://img.shields.io/badge/IA%20Ac%C3%BAstica-Faster--Whisper-10B981?style=for-the-badge" alt="Faster-Whisper"/>
-      <br>
-      <img src="https://img.shields.io/badge/Arsenal-10%2B%20Contramedidas-EF4444?style=for-the-badge" alt="Contramedidas"/>
-      <br>
-      <img src="https://img.shields.io/badge/Stack-NestJS%20%7C%20Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Nest + Next"/>
-      <br>
-      <img src="https://img.shields.io/badge/Database-Postgres%20%2B%20Redis-336791?style=for-the-badge&logo=redis&logoColor=white" alt="Postgres + Redis"/>
-    </td>
-    <td width="70%" valign="top">
-      <p>
-        <strong>Plataforma corporativa de inteligência cibernética, monitoramento estratégico e defesa reputacional 24/7:</strong>
-        Solução integrada para proteção de marcas e lideranças contra desinformação coordenada, com vigilância multicanal contínua, análise semântica de riscos com IA, cofre pericial de evidências com cadeia de custódia e arsenal de contramedidas automatizadas.
-      </p>
-      <ul>
-        <li><strong>Vigilância Multicanal 24/7 (9+ Plataformas):</strong> Ingestão contínua a cada 5 minutos monitorando Instagram (API privada móvel), TikTok, Twitter/X (API v2), YouTube Data v3, Telegram (35+ canais), Reddit, Google News via CSE, Meta Ads Library e Diários Oficiais.</li>
-        <li><strong>Motor de IA &amp; Análise Semântica de Riscos:</strong> Algoritmo de NLP com normalização de texto, detecção de ironias/ofensas, cálculo de <code>RiskScore</code> dinâmico ponderado, identificação de redes coordenadas (<em>astroturfing</em>) e deepfakes.</li>
-        <li><strong>Cofre Pericial de Provas (Cadeia de Custódia):</strong> Congelamento probatório instantâneo com captura de tela em alta resolução e espelhamento HTML integral via Playwright. Geração de hash criptográfico <strong>SHA-256</strong> e laudos em PDF em conformidade com o CPP (Art. 158-A a 158-F) e ABNT NBR ISO/IEC 27037.</li>
-        <li><strong>Arsenal de Contramedidas Automatizadas:</strong> Protocolos de resposta rápida com minutas para notificações (Marco Civil Art. 19), takedowns DMCA, flagging em bases de reputação (VirusTotal e Google Web Risk) e desindexação de URLs difamatórias.</li>
-        <li><strong>Inteligência Acústica com Faster-Whisper:</strong> Worker em Python 3.11 executando <code>faster-whisper</code> (CTranslate2 int8) para transcrição contínua em tempo real de emissoras de rádio via streaming, com buffer circular de 10 segundos pré-roll para preservação contextual.</li>
-        <li><strong>Centro de Comando Reativo (50+ Visões):</strong> Interface analítica em <strong>Next.js 14 App Router</strong>, React 18, Tailwind CSS e WebSockets/Socket.IO, sustentada por backend em <strong>NestJS 10</strong>, <strong>PostgreSQL 16</strong> com <strong>Prisma ORM</strong> e <strong>Redis 7</strong> com BullMQ.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=nodejs,ts,react,nextjs,postgres,prisma,redis,py,docker&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
+    <img src="assets/logorisk.png" width="220" alt="RiskCore AI Demo" />
+  </a>
+
+  <br><br>
+
+  <p>
+    <a href="https://github.com/davifeels/RiskCore-AI" target="_blank">
+      <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+    </a>
+    <img src="https://img.shields.io/badge/Vigil%C3%A2ncia-9%2B%20Canais%2024%2F7-7C3AED?style=for-the-badge" alt="9+ Canais"/>
+    <img src="https://img.shields.io/badge/Cofre%20Pericial-SHA--256%20ISO%2F27037-0284C7?style=for-the-badge" alt="ISO 27037"/>
+    <img src="https://img.shields.io/badge/IA%20Ac%C3%BAstica-Faster--Whisper-10B981?style=for-the-badge" alt="Faster-Whisper"/>
+    <img src="https://img.shields.io/badge/Arsenal-10%2B%20Contramedidas-EF4444?style=for-the-badge" alt="Contramedidas"/>
+    <img src="https://img.shields.io/badge/Stack-NestJS%20%7C%20Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Nest + Next"/>
+    <img src="https://img.shields.io/badge/Database-Postgres%20%2B%20Redis-336791?style=for-the-badge&logo=redis&logoColor=white" alt="Postgres + Redis"/>
+  </p>
+</div>
+
+<br>
+
+**Plataforma corporativa de inteligência cibernética, monitoramento estratégico e defesa reputacional 24/7:** Solução integrada para proteção de marcas e lideranças contra desinformação coordenada, com vigilância multicanal contínua, análise semântica de riscos com IA, cofre pericial de evidências com cadeia de custódia e arsenal de contramedidas automatizadas.
+
+* **Vigilância Multicanal 24/7 (9+ Plataformas):** Ingestão contínua a cada 5 minutos monitorando Instagram (API privada móvel), TikTok, Twitter/X (API v2), YouTube Data v3, Telegram (35+ canais), Reddit, Google News via CSE, Meta Ads Library e Diários Oficiais.
+* **Motor de IA &amp; Análise Semântica de Riscos:** Algoritmo de NLP com normalização de texto, detecção de ironias/ofensas, cálculo de <code>RiskScore</code> dinâmico ponderado, identificação de redes coordenadas (<em>astroturfing</em>) e deepfakes.
+* **Cofre Pericial de Provas (Cadeia de Custódia):** Congelamento probatório instantâneo com captura de tela em alta resolução e espelhamento HTML integral via Playwright. Geração de hash criptográfico <strong>SHA-256</strong> e laudos em PDF em conformidade com o CPP (Art. 158-A a 158-F) e ABNT NBR ISO/IEC 27037.
+* **Arsenal de Contramedidas Automatizadas:** Protocolos de resposta rápida com minutas para notificações (Marco Civil Art. 19), takedowns DMCA, flagging em bases de reputação (VirusTotal e Google Web Risk) e desindexação de URLs difamatórias.
+* **Inteligência Acústica com Faster-Whisper:** Worker em Python 3.11 executando <code>faster-whisper</code> (CTranslate2 int8) para transcrição contínua em tempo real de emissoras de rádio via streaming, com buffer circular de 10 segundos pré-roll para preservação contextual.
+* **Centro de Comando Reativo (50+ Visões):** Interface analítica em <strong>Next.js 14 App Router</strong>, React 18, Tailwind CSS e WebSockets/Socket.IO, sustentada por backend em <strong>NestJS 10</strong>, <strong>PostgreSQL 16</strong> com <strong>Prisma ORM</strong> e <strong>Redis 7</strong> com BullMQ.
+
+<br>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,ts,react,nextjs,postgres,prisma,redis,py,docker&theme=dark" height="34"/>
+</div>
 
 <br>
 
 ### 4. 🛡️ DataProtection — Governança de Dados & LGPD
 
-<table width="100%">
-  <tr>
-    <td width="30%" align="center" valign="top">
-      <img src="assets/datapretection.png" width="100%" alt="DataProtection Demo" />
-      <br><br>
-      <img src="https://img.shields.io/badge/Ambiente-ITI%20%C2%B7%20Governo%20Federal-0284C7?style=for-the-badge&logo=gov.br&logoColor=white" alt="Governo Federal"/>
-      <br>
-      <img src="https://img.shields.io/badge/Conformidade-LGPD%20Art.%2037-10B981?style=for-the-badge" alt="LGPD"/>
-      <br>
-      <img src="https://img.shields.io/badge/Backend-Java%20%7C%20Spring%20Boot-ED8B00?style=for-the-badge&logo=spring&logoColor=white" alt="Java Spring"/>
-      <br>
-      <img src="https://img.shields.io/badge/Frontend-Angular%20Institucional-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
-      <br>
-      <img src="https://img.shields.io/badge/Seguran%C3%A7a-RBAC%20Granular-6366F1?style=for-the-badge" alt="RBAC"/>
-    </td>
-    <td width="70%" valign="top">
-      <p>
-        <strong>Projeto institucional desenvolvido no Instituto Nacional de Tecnologia da Informação (ITI):</strong>
-        Catalogação e auditoria de operações de tratamento de dados pessoais conforme as diretrizes do Art. 37 da LGPD.
-      </p>
-      <ul>
-        <li><strong>APIs RESTful Corporativas:</strong> Endpoints em <strong>Java</strong> e <strong>Spring Boot</strong> para governança, mapeamento de finalidades e agentes de tratamento.</li>
-        <li><strong>Segurança Avançada:</strong> Controle de acesso granular por perfis (RBAC), autorização por setor, auditoria de ações críticas e exportação de relatórios em Excel.</li>
-        <li><strong>Interface Reativa:</strong> Interface em <strong>Angular</strong> conectada a banco relacional <strong>PostgreSQL</strong> sob padrões de segurança governamental.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java,spring,angular,postgres,docker,git&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="assets/datapretection.png" width="100%" alt="DataProtection Demo" />
+
+  <br><br>
+
+  <p>
+    <img src="https://img.shields.io/badge/Ambiente-ITI%20%C2%B7%20Governo%20Federal-0284C7?style=for-the-badge&logo=gov.br&logoColor=white" alt="Governo Federal"/>
+    <img src="https://img.shields.io/badge/Conformidade-LGPD%20Art.%2037-10B981?style=for-the-badge" alt="LGPD"/>
+    <img src="https://img.shields.io/badge/Backend-Java%20%7C%20Spring%20Boot-ED8B00?style=for-the-badge&logo=spring&logoColor=white" alt="Java Spring"/>
+    <img src="https://img.shields.io/badge/Frontend-Angular%20Institucional-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
+    <img src="https://img.shields.io/badge/Seguran%C3%A7a-RBAC%20Granular-6366F1?style=for-the-badge" alt="RBAC"/>
+  </p>
+</div>
+
+<br>
+
+**Projeto institucional desenvolvido no Instituto Nacional de Tecnologia da Informação (ITI):** Catalogação e auditoria de operações de tratamento de dados pessoais conforme as diretrizes do Art. 37 da LGPD.
+
+* **APIs RESTful Corporativas:** Endpoints em **Java** e **Spring Boot** para governança, mapeamento de finalidades e agentes de tratamento.
+* **Segurança Avançada:** Controle de acesso granular por perfis (RBAC), autorização por setor, auditoria de ações críticas e exportação de relatórios em Excel.
+* **Interface Reativa:** Interface em **Angular** conectada a banco relacional **PostgreSQL** sob padrões de segurança governamental.
+
+<br>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,angular,postgres,docker,git&theme=dark" height="34"/>
+</div>
+
+<br>
+
+---
 
 <br>
 
 ### 5. 🧠 Nexus AI OS — Assistente Autônomo com Memória Persistente
 
-<table width="100%">
-  <tr>
-    <td width="30%" align="center" valign="top">
-      <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
-        <img src="assets/logonexus.png" width="100%" alt="Nexus AI Demo" />
-      </a>
-      <br><br>
-      <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
-        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
-      </a>
-      <br>
-      <img src="https://img.shields.io/badge/Database-pgvector%20%2B%20Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector"/>
-      <br>
-      <img src="https://img.shields.io/badge/API-Python%20%7C%20FastAPI-3776AB?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
-      <br>
-      <img src="https://img.shields.io/badge/Arquitetura-RAG%20%2B%20Mem%C3%B3ria-8B5CF6?style=for-the-badge" alt="RAG"/>
-      <br>
-      <img src="https://img.shields.io/badge/Infra-Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-    </td>
-    <td width="70%" valign="top">
-      <p>
-        Assistente de inteligência artificial com memória de longo prazo e mecanismo de busca semântica vetorial avançada.
-      </p>
-      <ul>
-        <li><strong>Busca Semântica &amp; Embeddings:</strong> Armazenamento e consulta vetorial de alta dimensionalidade utilizando a extensão <strong>pgvector sobre PostgreSQL</strong>.</li>
-        <li><strong>API Assíncrona de Alta Vazão:</strong> Construída com <strong>Python</strong> e <strong>FastAPI</strong>.</li>
-        <li><strong>DevOps &amp; Isolamento:</strong> Totalmente conteinerizado com <strong>Docker</strong> para rápida portabilidade.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,docker,git&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
+    <img src="assets/logonexus.png" width="100%" alt="Nexus AI Demo" />
+  </a>
+
+  <br><br>
+
+  <p>
+    <a href="https://github.com/davifeels/nexus-ai-core" target="_blank">
+      <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+    </a>
+    <img src="https://img.shields.io/badge/Database-pgvector%20%2B%20Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector"/>
+    <img src="https://img.shields.io/badge/API-Python%20%7C%20FastAPI-3776AB?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
+    <img src="https://img.shields.io/badge/Arquitetura-RAG%20%2B%20Mem%C3%B3ria-8B5CF6?style=for-the-badge" alt="RAG"/>
+    <img src="https://img.shields.io/badge/Infra-Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  </p>
+</div>
+
+<br>
+
+**Assistente de inteligência artificial com memória de longo prazo e mecanismo de busca semântica vetorial avançada.**
+
+* **Busca Semântica &amp; Embeddings:** Armazenamento e consulta vetorial de alta dimensionalidade utilizando a extensão **pgvector sobre PostgreSQL**.
+* **API Assíncrona de Alta Vazão:** Construída com **Python** e **FastAPI**.
+* **DevOps &amp; Isolamento:** Totalmente conteinerizado com **Docker** para rápida portabilidade.
+
+<br>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,docker,git&theme=dark" height="34"/>
+</div>
+
+<br>
+
+---
 
 <br>
 
 ### 6. 📱 Rekkon — MDM Mobile &amp; Controle Parental com Validação Facial
 
-<table width="100%">
-  <tr>
-    <td width="30%" align="center" valign="top">
-      <img src="assets/sistemadereconhecimentofacial.gif" width="100%" alt="Rekkon MDM Demo" />
-      <br><br>
-      <img src="https://img.shields.io/badge/Mobile-Android%20Nativo-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
-      <br>
-      <img src="https://img.shields.io/badge/Vis%C3%A3o%20Computacional-ML%20Kit-FF6F00?style=for-the-badge" alt="ML Kit"/>
-      <br>
-      <img src="https://img.shields.io/badge/Linguagem-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"/>
-      <br>
-      <img src="https://img.shields.io/badge/Controle-MDM%20Corporativo-0284C7?style=for-the-badge" alt="MDM"/>
-      <br>
-      <img src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Docker-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node"/>
-    </td>
-    <td width="70%" valign="top">
-      <p>
-        Gerenciamento remoto de dispositivos móveis (MDM) corporativo e controle parental com aplicativo nativo Android.
-      </p>
-      <ul>
-        <li><strong>Biometria On-Device:</strong> Detecção e validação facial com processamento local via <strong>Google ML Kit</strong>.</li>
-        <li><strong>Políticas Remotas:</strong> Aplicação de bloqueios em tempo real, auditoria e execução de comandos seguros.</li>
-        <li><strong>Ecossistema:</strong> App desenvolvido em <strong>Kotlin</strong>, integrado a serviços backend em <strong>Node.js</strong> e <strong>Docker</strong>.</li>
-      </ul>
-      <p>
-        <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,nodejs,docker&theme=dark" height="34"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="assets/sistemadereconhecimentofacial.gif" width="100%" alt="Rekkon MDM Demo" />
+
+  <br><br>
+
+  <p>
+    <img src="https://img.shields.io/badge/Mobile-Android%20Nativo-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
+    <img src="https://img.shields.io/badge/Vis%C3%A3o%20Computacional-ML%20Kit-FF6F00?style=for-the-badge" alt="ML Kit"/>
+    <img src="https://img.shields.io/badge/Linguagem-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"/>
+    <img src="https://img.shields.io/badge/Controle-MDM%20Corporativo-0284C7?style=for-the-badge" alt="MDM"/>
+    <img src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Docker-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node"/>
+  </p>
+</div>
+
+<br>
+
+**Gerenciamento remoto de dispositivos móveis (MDM) corporativo e controle parental com aplicativo nativo Android.**
+
+* **Biometria On-Device:** Detecção e validação facial com processamento local via **Google ML Kit**.
+* **Políticas Remotas:** Aplicação de bloqueios em tempo real, auditoria e execução de comandos seguros.
+* **Ecossistema:** App desenvolvido em **Kotlin**, integrado a serviços backend em **Node.js** e **Docker**.
+
+<br>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,nodejs,docker&theme=dark" height="34"/>
+</div>
+
+<br>
 
 <br>
 
