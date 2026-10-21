@@ -224,7 +224,42 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
 
 <br>
 
-### 3. 📡 RiskCore AI — Monitoramento Reputacional & Análise Preditiva
+### 3. 🛡️ AegisCore — Plataforma de Segurança &amp; Governança de Nuvem
+
+<table width="100%">
+  <tr>
+    <td width="36%" align="center" valign="middle">
+      <a href="https://github.com/davifeels/aegis-core" target="_blank">
+        <img src="assets/aegiscore.svg" width="100%" alt="AegisCore" />
+      </a>
+      <br><br>
+      <a href="https://github.com/davifeels/aegis-core" target="_blank">
+        <img src="https://img.shields.io/badge/C%C3%B3digo-GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Código GitHub"/>
+      </a>
+      <br>
+      <img src="https://img.shields.io/badge/Security-RBAC%20%2B%20Audit-0284C7?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Security"/>
+    </td>
+    <td width="64%" valign="top">
+      <p>
+        <strong>Plataforma corporativa de governança e inventário de ativos multinuvem (AWS, Azure, GCP):</strong>
+        Construída com <strong>Java 25</strong> e <strong>Spring Boot</strong>, implementa controle de acesso granular RBAC com senhas em BCrypt e trilha de auditoria transacional imutável.
+      </p>
+      <ul>
+        <li><strong>Segurança &amp; RBAC:</strong> Autenticação HTTP Basic stateless com segregação de perfis (ADMIN para mutações e logs; USER para consulta de inventário).</li>
+        <li><strong>Auditoria Transacional Desacoplada:</strong> Eventos Spring interceptados pós-commit (<code>@TransactionalEventListener(phase = AFTER_COMMIT)</code>) com persistência isolada (<code>REQUIRES_NEW</code>).</li>
+        <li><strong>Banco de Dados &amp; Migrations:</strong> <strong>PostgreSQL 18</strong> versionado via <strong>Flyway</strong> com índices B-Tree temporais e filtros dinâmicos via JPA Specification.</li>
+        <li><strong>Testes Herméticos:</strong> Suíte de testes de integração isolados com <strong>Testcontainers</strong> (Postgres efêmero via Docker) integrada ao GitHub Actions.</li>
+      </ul>
+      <p>
+        <img src="https://skillicons.dev/icons?i=java,spring,postgres,docker,githubactions&theme=dark" height="34"/>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 4. 📡 RiskCore AI — Monitoramento Reputacional &amp; Análise Preditiva
 
 <table width="100%">
   <tr>
@@ -257,7 +292,7 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
 
 <br>
 
-### 4. 🧠 Nexus AI OS — Assistente Autônomo com Memória Persistente
+### 5. 🧠 Nexus AI OS — Assistente Autônomo com Memória Persistente
 
 <table width="100%">
   <tr>
@@ -277,9 +312,9 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
         Assistente de inteligência artificial com memória de longo prazo e mecanismo de busca semântica vetorial avançada.
       </p>
       <ul>
-        <li><strong>Busca Semântica & Embeddings:</strong> Armazenamento e consulta vetorial de alta dimensionalidade utilizando a extensão <strong>pgvector sobre PostgreSQL</strong>.</li>
+        <li><strong>Busca Semântica &amp; Embeddings:</strong> Armazenamento e consulta vetorial de alta dimensionalidade utilizando a extensão <strong>pgvector sobre PostgreSQL</strong>.</li>
         <li><strong>API Assíncrona de Alta Vazão:</strong> Construída com <strong>Python</strong> e <strong>FastAPI</strong>.</li>
-        <li><strong>DevOps & Isolamento:</strong> Totalmente conteinerizado com <strong>Docker</strong> para rápida portabilidade.</li>
+        <li><strong>DevOps &amp; Isolamento:</strong> Totalmente conteinerizado com <strong>Docker</strong> para rápida portabilidade.</li>
       </ul>
       <p>
         <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,docker,git&theme=dark" height="34"/>
@@ -290,7 +325,7 @@ Autor e desenvolvedor do **[PuffsZone](https://puffszone.tech)**, sistema comple
 
 <br>
 
-### 5. 📱 Rekkon — MDM Mobile & Controle Parental com Validação Facial
+### 6. 📱 Rekkon — MDM Mobile &amp; Controle Parental com Validação Facial
 
 <table width="100%">
   <tr>
